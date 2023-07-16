@@ -12,6 +12,9 @@
 #include "util/system.h"
 
 static char **__argv;
+
+// ** user environment
+// https://man7.org/linux/man-pages/man7/environ.7.html
 extern char **environ;
 
 int bind_cpu(int cpuid)

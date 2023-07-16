@@ -61,6 +61,7 @@ int main(int argc, char **argv)
     }
 
     /* start the service */
+    // **fork the daemon process**
     sys_daemon();
     proc_title_init(argv);
 
