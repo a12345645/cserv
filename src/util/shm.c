@@ -17,6 +17,7 @@ static struct shm *shm_object;
 /* Allocate without reclaiming */
 void *shm_alloc(size_t size_bytes)
 {
+    // for alignment
     size_bytes = ROUND_UP(size_bytes, MEM_ALIGN);
 
     spin_lock(&shm_object->lock);
